@@ -1,0 +1,41 @@
+# FastAPI & Web
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-multipart
+httpx
+aiohttp
+
+# Database
+sqlalchemy
+psycopg2-binary
+redis
+
+# Authentication
+passlib[bcrypt]
+python-jose[cryptography]
+
+# HTTP
+requests
+
+# ===========================================
+# HuggingFace & ML (Required for inference)
+# ===========================================
+torch
+torchvision
+torchaudio
+transformers>=4.36.0
+accelerate>=0.25.0
+safetensors
+sentencepiece  # For tokenizers
+
+# Quantization (Optional - for memory efficiency)
+bitsandbytes>=0.41.0  # 4-bit/8-bit quantization
+
+# GGUF support (Optional - for llama.cpp)
+# llama-cpp-python  # Uncomment if using GGUF models
+
+# Other
+numpy
+zstandard

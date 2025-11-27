@@ -1,0 +1,18 @@
+{
+  "system_name": "NullAI",
+  "version": "1.0.0",
+  "debug": false,
+  "default_model_id": "deepseek-r1-32b",
+  "memory_max_nodes": 100000,
+  "auto_save_to_memory": true,
+  "memory_save_threshold": 0.6,
+  "enable_nurse_log_system": true,
+  "succession_threshold": 0.85,
+  "dream_interval_conversations": 50,
+  "api_host": "0.0.0.0",
+  "api_port": 8000,
+  "cors_origins": [
+    "*"
+  ],
+  "main_db_path": "null_ai_knowledge.iath"
+}

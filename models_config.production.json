@@ -1,0 +1,39 @@
+{
+  "models": [
+    {
+      "model_id": "nullai-deepseek-r1-7b-api",
+      "display_name": "NullAI DeepSeek R1 7B (API)",
+      "provider": "huggingface_api",
+      "api_url": "https://api-inference.huggingface.co/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "model_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "max_tokens": 4096,
+      "temperature": 0.7,
+      "timeout": 120,
+      "is_default": true,
+      "supported_domains": [
+        "medical",
+        "legal",
+        "economics",
+        "general",
+        "programming"
+      ],
+      "description": "軽量版DeepSeek R1 7B。HuggingFace Inference API経由で実行。"
+    },
+    {
+      "model_id": "qwen2-7b-api",
+      "display_name": "Qwen2.5 7B (API)",
+      "provider": "huggingface_api",
+      "api_url": "https://api-inference.huggingface.co/models/Qwen/Qwen2.5-7B-Instruct",
+      "model_name": "Qwen/Qwen2.5-7B-Instruct",
+      "max_tokens": 4096,
+      "temperature": 0.7,
+      "timeout": 120,
+      "is_default": false,
+      "supported_domains": [
+        "general",
+        "programming"
+      ],
+      "description": "Qwen2.5 7B。HuggingFace Inference API経由。"
+    }
+  ]
+}

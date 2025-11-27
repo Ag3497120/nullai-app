@@ -1,0 +1,105 @@
+{
+  "app": {
+    "title": "NullAI",
+    "tagline": "Multi-Domain Knowledge Reasoning System"
+  },
+  "nav": {
+    "chat": "Chat",
+    "domains": "Domains",
+    "knowledge": "Knowledge",
+    "proposals": "Proposals"
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "signIn": "Sign In",
+    "guest": "Guest",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "passwordMinLength": "Password (min 6 characters)",
+    "displayName": "Display Name",
+    "continueAsGuest": "Continue as Guest",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "loginWithOrcid": "Sign in with ORCID (Expert)",
+    "orcidGrantsBadge": "ORCID login grants expert verification badge",
+    "guestNotice": "You are browsing as a guest.",
+    "guestNoticeAction": "Sign in to submit proposals and get verification badges."
+  },
+  "chat": {
+    "askQuestion": "Ask a question...",
+    "send": "Send",
+    "selectDomain": "Select Domain",
+    "selectModel": "Select Model",
+    "thinking": "Thinking...",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "noResponse": "No response"
+  },
+  "domains": {
+    "title": "Domain Management",
+    "description": "Create and edit knowledge domains",
+    "add": "Add Domain",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "name": "Domain Name",
+    "domainDescription": "Description",
+    "axes": "Axes"
+  },
+  "knowledge": {
+    "title": "Knowledge Base",
+    "tiles": "Knowledge Tiles",
+    "expertVerified": "Expert Verified",
+    "communityVerified": "Community Verified",
+    "unverified": "Unverified",
+    "viewDetails": "View Details",
+    "noTiles": "No tiles available"
+  },
+  "proposals": {
+    "title": "Edit Proposals",
+    "description": "View and manage knowledge base edit proposals",
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "review": "Review",
+    "approve": "Approve",
+    "reject": "Reject"
+  },
+  "succession": {
+    "title": "Model Succession",
+    "status": "Status",
+    "trigger": "Trigger",
+    "history": "History",
+    "inferenceCount": "Inference Count",
+    "highQualityCount": "High Quality Count",
+    "threshold": "Threshold",
+    "ready": "Ready",
+    "notReady": "Not Ready",
+    "exporting": "Exporting...",
+    "exportComplete": "Export Complete",
+    "trainingData": "Training Data",
+    "dbSnapshot": "DB Snapshot"
+  },
+  "verification": {
+    "none": "Unverified",
+    "community": "Community Reviewed",
+    "expert": "Expert Edited",
+    "multiExpert": "Multi-Expert Verified"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "language": "Language"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "x_axis": {
+    "name": "legal_field",
+    "description": "法律分野",
+    "range": [0, 100],
+    "categories": {
+      "constitution": {"name": "憲法", "range": [0, 10]},
+      "civil_law": {"name": "民法", "range": [10, 40]},
+      "criminal_law": {"name": "刑法", "range": [40, 60]},
+      "commercial_law": {"name": "商法", "range": [60, 75]},
+      "procedural_law": {"name": "訴訟法", "range": [75, 90]},
+      "international_law": {"name": "国際法", "range": [90, 100]}
+    }
+  },
+  "y_axis": {
+    "name": "abstraction_level",
+    "description": "抽象度",
+    "range": [0, 100],
+    "categories": {
+      "specific_case": {"name": "具体的判例", "range": [0, 30]},
+      "statute_interpretation": {"name": "条文解釈", "range": [30, 60]},
+      "legal_theory": {"name": "法理論", "range": [60, 80]},
+      "philosophy_of_law": {"name": "法哲学", "range": [80, 100]}
+    }
+  },
+  "z_axis": {
+    "name": "temporal_validity",
+    "description": "時間的有効性",
+    "range": [0, 100],
+    "categories": {
+      "current_law": {"name": "現行法", "range": [0, 40]},
+      "scheduled_revision": {"name": "改正予定", "range": [40, 60]},
+      "historical_law": {"name": "歴史的・旧法", "range": [60, 80]},
+      "future_discussion": {"name": "将来的議論", "range": [80, 100]}
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "法学オントロジー（民法）",
+    "domain": "legal",
+    "version": "0.1.0",
+    "concepts": [
+        {
+            "id": "civillaw_001",
+            "name": "民法総則",
+            "children": ["civillaw_002"]
+        },
+        {
+            "id": "civillaw_002",
+            "name": "法律行為",
+            "parent": "civillaw_001",
+            "children": ["civillaw_003"]
+        },
+        {
+            "id": "civillaw_003",
+            "name": "契約",
+            "parent": "civillaw_002",
+            "standard_coordinate": {
+                "legal_space": [25, 45, 20] 
+            },
+            "children": ["civillaw_004"]
+        },
+        {
+            "id": "civillaw_004",
+            "name": "売買契約",
+            "parent": "civillaw_003"
+        }
+    ]
+}

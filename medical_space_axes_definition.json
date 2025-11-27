@@ -1,0 +1,98 @@
+{
+  "x_axis": {
+    "name": "organ_system",
+    "description": "臓器系",
+    "range": [0, 100],
+    "categories": {
+      "cellular_biology": {
+        "name": "基本的な生物学",
+        "range": [0, 10],
+        "description": "細胞、分子"
+      },
+      "cardiovascular": {
+        "name": "循環器系",
+        "range": [10, 30]
+      },
+      "respiratory": {
+        "name": "呼吸器系",
+        "range": [30, 50]
+      },
+      "nervous": {
+        "name": "神経系",
+        "range": [50, 70]
+      },
+      "digestive": {
+        "name": "消化器系",
+        "range": [70, 85]
+      },
+      "endocrine_immune": {
+        "name": "内分泌・免疫系",
+        "range": [85, 100]
+      }
+    }
+  },
+  "y_axis": {
+    "name": "pathophysiology_depth",
+    "description": "病態深さ",
+    "range": [0, 100],
+    "categories": {
+      "symptom": {
+        "name": "症状レベル",
+        "range": [0, 20],
+        "description": "患者が感じる現象"
+      },
+      "diagnostic": {
+        "name": "診断レベル",
+        "range": [20, 40],
+        "description": "検査所見"
+      },
+      "mechanism": {
+        "name": "機序レベル",
+        "range": [40, 60],
+        "description": "なぜそうなるのか"
+      },
+      "molecular": {
+        "name": "分子レベル",
+        "range": [60, 80],
+        "description": "遺伝子、酵素"
+      },
+      "complex_pathophysiology": {
+        "name": "複合病態",
+        "range": [80, 100],
+        "description": "複数メカニズムの相互作用"
+      }
+    }
+  },
+  "z_axis": {
+    "name": "clinical_timeline",
+    "description": "臨床時間軸",
+    "range": [0, 100],
+    "categories": {
+      "hyperacute": {
+        "name": "超急性",
+        "range": [0, 20],
+        "description": "分～時間"
+      },
+      "acute": {
+        "name": "急性",
+        "range": [20, 40],
+        "description": "日"
+      },
+      "subacute": {
+        "name": "亜急性",
+        "range": [40, 60],
+        "description": "週"
+      },
+      "chronic": {
+        "name": "慢性",
+        "range": [60, 80],
+        "description": "月～年"
+      },
+      "long_term_prognosis": {
+        "name": "遠期予後",
+        "range": [80, 100],
+        "description": "年単位"
+      }
+    }
+  }
+}

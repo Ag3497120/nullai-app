@@ -1,0 +1,99 @@
+{
+  "models": [
+    {
+      "model_id": "deepseek-r1-32b",
+      "display_name": "DeepSeek R1 32B",
+      "provider": "huggingface",
+      "api_url": "",
+      "model_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "max_tokens": 4096,
+      "temperature": 0.7,
+      "timeout": 120,
+      "is_default": true,
+      "supported_domains": [
+        "medical",
+        "legal",
+        "economics",
+        "general"
+      ],
+      "description": "高性能な推論特化モデル。医療・法律・経済に対応。"
+    },
+    {
+      "model_id": "deepseek-r1-14b",
+      "display_name": "DeepSeek R1 14B",
+      "provider": "huggingface",
+      "api_url": "",
+      "model_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+      "max_tokens": 4096,
+      "temperature": 0.7,
+      "timeout": 120,
+      "is_default": false,
+      "supported_domains": [
+        "general"
+      ],
+      "description": "軽量版DeepSeek。一般的な質問に適している。"
+    },
+    {
+      "model_id": "deepseek-r1-7b",
+      "display_name": "DeepSeek R1 7B",
+      "provider": "huggingface",
+      "api_url": "",
+      "model_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "max_tokens": 4096,
+      "temperature": 0.7,
+      "timeout": 120,
+      "is_default": false,
+      "supported_domains": [
+        "general"
+      ],
+      "description": "最軽量版DeepSeek。リソース制限環境向け。"
+    },
+    {
+      "model_id": "llama3-8b",
+      "display_name": "Llama 3.1 8B",
+      "provider": "huggingface",
+      "api_url": "",
+      "model_name": "meta-llama/Llama-3.1-8B-Instruct",
+      "max_tokens": 4096,
+      "temperature": 0.7,
+      "timeout": 120,
+      "is_default": false,
+      "supported_domains": [
+        "general",
+        "programming"
+      ],
+      "description": "Meta社の汎用LLM。プログラミングに強い。"
+    },
+    {
+      "model_id": "qwen2-7b",
+      "display_name": "Qwen2.5 7B",
+      "provider": "huggingface",
+      "api_url": "",
+      "model_name": "Qwen/Qwen2.5-7B-Instruct",
+      "max_tokens": 4096,
+      "temperature": 0.7,
+      "timeout": 120,
+      "is_default": false,
+      "supported_domains": [
+        "general",
+        "programming"
+      ],
+      "description": "Alibaba社の高性能多言語モデル。日本語に強い。"
+    },
+    {
+      "model_id": "mistral-7b",
+      "display_name": "Mistral 7B",
+      "provider": "huggingface",
+      "api_url": "",
+      "model_name": "mistralai/Mistral-7B-Instruct-v0.3",
+      "max_tokens": 4096,
+      "temperature": 0.7,
+      "timeout": 120,
+      "is_default": false,
+      "supported_domains": [
+        "general"
+      ],
+      "description": "Mistral AIの高効率モデル。バランスの良い性能。"
+    }
+  ]
+}

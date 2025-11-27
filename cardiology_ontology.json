@@ -1,0 +1,86 @@
+{
+    "name": "心臓病学オントロジー",
+    "domain": "medical",
+    "version": "0.1.0",
+    "concepts": [
+        {
+            "id": "cardio_001",
+            "name": "心臓学",
+            "children": ["cardio_002", "cardio_003"]
+        },
+        {
+            "id": "cardio_002",
+            "name": "心臓の構造",
+            "parent": "cardio_001",
+            "children": ["cardio_struct_001", "cardio_struct_002", "cardio_struct_003"]
+        },
+        {
+            "id": "cardio_struct_001",
+            "name": "左心室",
+            "parent": "cardio_002"
+        },
+        {
+            "id": "cardio_struct_002",
+            "name": "右心室",
+            "parent": "cardio_002"
+        },
+        {
+            "id": "cardio_struct_003",
+            "name": "冠動脈",
+            "parent": "cardio_002"
+        },
+        {
+            "id": "cardio_003",
+            "name": "心臓疾患",
+            "parent": "cardio_001",
+            "children": ["cardio_dis_001", "cardio_dis_002"]
+        },
+        {
+            "id": "cardio_dis_001",
+            "name": "心筋梗塞",
+            "parent": "cardio_003",
+            "children": ["cardio_ami_001", "cardio_ami_002", "cardio_ami_003", "cardio_ami_004", "cardio_ami_005", "cardio_ami_006"],
+            "standard_coordinate": {
+                "medical_space": [28, 45, 15]
+            }
+        },
+        {
+            "id": "cardio_ami_001",
+            "name": "ST上昇型心筋梗塞",
+            "parent": "cardio_dis_001"
+        },
+        {
+            "id": "cardio_ami_002",
+            "name": "非ST上昇型心筋梗塞",
+            "parent": "cardio_dis_001"
+        },
+        {
+            "id": "cardio_ami_003",
+            "name": "症状",
+            "parent": "cardio_dis_001"
+        },
+        {
+            "id": "cardio_ami_004",
+            "name": "診断基準",
+            "parent": "cardio_dis_001",
+            "standard_coordinate": {
+                "medical_space": [28, 35, 15]
+            }
+        },
+        {
+            "id": "cardio_ami_005",
+            "name": "治療",
+            "parent": "cardio_dis_001"
+        },
+        {
+            "id": "cardio_ami_006",
+            "name": "予後",
+            "parent": "cardio_dis_001"
+        },
+        {
+            "id": "cardio_dis_002",
+            "name": "心不全",
+            "parent": "cardio_003"
+        }
+    ]
+}

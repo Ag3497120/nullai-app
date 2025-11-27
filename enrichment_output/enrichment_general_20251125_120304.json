@@ -1,0 +1,21 @@
+{
+  "domain_id": "general",
+  "timestamp": "20251125_120304",
+  "total_questions": 2,
+  "success_count": 0,
+  "error_count": 2,
+  "results": [
+    {
+      "question": "人工知能について教えてください。",
+      "domain_id": "general",
+      "error": "Model not found: ollama-deepseek-r1-32b",
+      "status": "error"
+    },
+    {
+      "question": "気候変動について教えてください。",
+      "domain_id": "general",
+      "error": "Model not found: ollama-deepseek-r1-32b",
+      "status": "error"
+    }
+  ]
+}

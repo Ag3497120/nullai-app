@@ -1,0 +1,634 @@
+{
+  "domains": [
+    {
+      "domain_id": "medical",
+      "name": "Medical (General)",
+      "description": "医療・健康に関する一般的な知識領域",
+      "default_model_id": "gemma2:12b",
+      "db_path": "medical_knowledge.iath",
+      "ontology_path": "cardiology_ontology.json",
+      "icon": "medical",
+      "is_active": true
+    },
+    {
+      "domain_id": "cardiology",
+      "name": "Cardiology",
+      "description": "循環器・心臓病学",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "heart",
+      "is_active": true
+    },
+    {
+      "domain_id": "neurology",
+      "name": "Neurology",
+      "description": "神経学・脳科学",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "brain",
+      "is_active": true
+    },
+    {
+      "domain_id": "oncology",
+      "name": "Oncology",
+      "description": "腫瘍学・がん医療",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "oncology",
+      "is_active": true
+    },
+    {
+      "domain_id": "pediatrics",
+      "name": "Pediatrics",
+      "description": "小児科学・子どもの健康",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "child",
+      "is_active": true
+    },
+    {
+      "domain_id": "psychiatry",
+      "name": "Psychiatry",
+      "description": "精神医学・メンタルヘルス",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "mind",
+      "is_active": true
+    },
+    {
+      "domain_id": "pharmacology",
+      "name": "Pharmacology",
+      "description": "薬理学・薬物療法",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "pill",
+      "is_active": true
+    },
+    {
+      "domain_id": "nutrition",
+      "name": "Nutrition",
+      "description": "栄養学・食事療法",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "nutrition",
+      "is_active": true
+    },
+    {
+      "domain_id": "legal",
+      "name": "Legal (General)",
+      "description": "法律・法務に関する一般的な知識領域",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "legal_knowledge.iath",
+      "ontology_path": "legal_ontology.json",
+      "icon": "legal",
+      "is_active": true
+    },
+    {
+      "domain_id": "labor_law",
+      "name": "Labor Law",
+      "description": "労働法・雇用法規",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "labor",
+      "is_active": true
+    },
+    {
+      "domain_id": "corporate_law",
+      "name": "Corporate Law",
+      "description": "会社法・企業法務",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "corporate",
+      "is_active": true
+    },
+    {
+      "domain_id": "intellectual_property",
+      "name": "Intellectual Property",
+      "description": "知的財産権・特許・著作権",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "ip",
+      "is_active": true
+    },
+    {
+      "domain_id": "contract_law",
+      "name": "Contract Law",
+      "description": "契約法・取引法務",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "contract",
+      "is_active": true
+    },
+    {
+      "domain_id": "tax_law",
+      "name": "Tax Law",
+      "description": "税法・租税法規",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "tax",
+      "is_active": true
+    },
+    {
+      "domain_id": "family_law",
+      "name": "Family Law",
+      "description": "家族法・相続法",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "family",
+      "is_active": true
+    },
+    {
+      "domain_id": "criminal_law",
+      "name": "Criminal Law",
+      "description": "刑事法・刑法",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "criminal",
+      "is_active": true
+    },
+    {
+      "domain_id": "economics",
+      "name": "Economics (General)",
+      "description": "経済学・経済理論",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "economics_knowledge.iath",
+      "ontology_path": "",
+      "icon": "economics",
+      "is_active": true
+    },
+    {
+      "domain_id": "finance",
+      "name": "Finance",
+      "description": "金融・投資・資産運用",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "finance",
+      "is_active": true
+    },
+    {
+      "domain_id": "accounting",
+      "name": "Accounting",
+      "description": "会計学・財務会計",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "accounting",
+      "is_active": true
+    },
+    {
+      "domain_id": "banking",
+      "name": "Banking",
+      "description": "銀行業務・金融機関",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "bank",
+      "is_active": true
+    },
+    {
+      "domain_id": "cryptocurrency",
+      "name": "Cryptocurrency",
+      "description": "暗号資産・ブロックチェーン金融",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "crypto",
+      "is_active": true
+    },
+    {
+      "domain_id": "real_estate",
+      "name": "Real Estate",
+      "description": "不動産・不動産投資",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "realestate",
+      "is_active": true
+    },
+    {
+      "domain_id": "programming",
+      "name": "Programming",
+      "description": "プログラミング・ソフトウェア開発",
+      "default_model_id": "llama3-8b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "code",
+      "is_active": true
+    },
+    {
+      "domain_id": "web_development",
+      "name": "Web Development",
+      "description": "Web開発・フロントエンド・バックエンド",
+      "default_model_id": "llama3-8b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "web",
+      "is_active": true
+    },
+    {
+      "domain_id": "machine_learning",
+      "name": "Machine Learning",
+      "description": "機械学習・AI・ディープラーニング",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "ml",
+      "is_active": true
+    },
+    {
+      "domain_id": "cybersecurity",
+      "name": "Cybersecurity",
+      "description": "サイバーセキュリティ・情報セキュリティ",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "security",
+      "is_active": true
+    },
+    {
+      "domain_id": "cloud_computing",
+      "name": "Cloud Computing",
+      "description": "クラウドコンピューティング・AWS/GCP/Azure",
+      "default_model_id": "llama3-8b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "cloud",
+      "is_active": true
+    },
+    {
+      "domain_id": "devops",
+      "name": "DevOps",
+      "description": "DevOps・CI/CD・インフラ自動化",
+      "default_model_id": "llama3-8b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "devops",
+      "is_active": true
+    },
+    {
+      "domain_id": "databases",
+      "name": "Databases",
+      "description": "データベース・SQL・NoSQL",
+      "default_model_id": "llama3-8b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "database",
+      "is_active": true
+    },
+    {
+      "domain_id": "mobile_development",
+      "name": "Mobile Development",
+      "description": "モバイルアプリ開発・iOS/Android",
+      "default_model_id": "llama3-8b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "mobile",
+      "is_active": true
+    },
+    {
+      "domain_id": "physics",
+      "name": "Physics",
+      "description": "物理学・力学・量子力学",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "physics",
+      "is_active": true
+    },
+    {
+      "domain_id": "chemistry",
+      "name": "Chemistry",
+      "description": "化学・有機化学・無機化学",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "chemistry",
+      "is_active": true
+    },
+    {
+      "domain_id": "biology",
+      "name": "Biology",
+      "description": "生物学・分子生物学・遺伝学",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "biology",
+      "is_active": true
+    },
+    {
+      "domain_id": "mathematics",
+      "name": "Mathematics",
+      "description": "数学・統計学・確率論",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "math",
+      "is_active": true
+    },
+    {
+      "domain_id": "environmental_science",
+      "name": "Environmental Science",
+      "description": "環境科学・生態学・気候変動",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "environment",
+      "is_active": true
+    },
+    {
+      "domain_id": "astronomy",
+      "name": "Astronomy",
+      "description": "天文学・宇宙科学",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "astronomy",
+      "is_active": true
+    },
+    {
+      "domain_id": "business_strategy",
+      "name": "Business Strategy",
+      "description": "経営戦略・ビジネスプランニング",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "strategy",
+      "is_active": true
+    },
+    {
+      "domain_id": "marketing",
+      "name": "Marketing",
+      "description": "マーケティング・広告・ブランディング",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "marketing",
+      "is_active": true
+    },
+    {
+      "domain_id": "human_resources",
+      "name": "Human Resources",
+      "description": "人事・採用・組織開発",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "hr",
+      "is_active": true
+    },
+    {
+      "domain_id": "project_management",
+      "name": "Project Management",
+      "description": "プロジェクト管理・アジャイル・スクラム",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "project",
+      "is_active": true
+    },
+    {
+      "domain_id": "entrepreneurship",
+      "name": "Entrepreneurship",
+      "description": "起業・スタートアップ・ベンチャー",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "startup",
+      "is_active": true
+    },
+    {
+      "domain_id": "supply_chain",
+      "name": "Supply Chain",
+      "description": "サプライチェーン・物流・在庫管理",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "logistics",
+      "is_active": true
+    },
+    {
+      "domain_id": "education",
+      "name": "Education",
+      "description": "教育学・教育方法・カリキュラム設計",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "education",
+      "is_active": true
+    },
+    {
+      "domain_id": "language_learning",
+      "name": "Language Learning",
+      "description": "語学学習・外国語教育",
+      "default_model_id": "qwen2-7b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "language",
+      "is_active": true
+    },
+    {
+      "domain_id": "history",
+      "name": "History",
+      "description": "歴史学・世界史・日本史",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "history",
+      "is_active": true
+    },
+    {
+      "domain_id": "philosophy",
+      "name": "Philosophy",
+      "description": "哲学・倫理学・論理学",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "philosophy",
+      "is_active": true
+    },
+    {
+      "domain_id": "mechanical_engineering",
+      "name": "Mechanical Engineering",
+      "description": "機械工学・機械設計",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "mechanical",
+      "is_active": true
+    },
+    {
+      "domain_id": "electrical_engineering",
+      "name": "Electrical Engineering",
+      "description": "電気工学・電子工学",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "electrical",
+      "is_active": true
+    },
+    {
+      "domain_id": "civil_engineering",
+      "name": "Civil Engineering",
+      "description": "土木工学・建設工学",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "civil",
+      "is_active": true
+    },
+    {
+      "domain_id": "architecture",
+      "name": "Architecture",
+      "description": "建築学・建築設計",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "architecture",
+      "is_active": true
+    },
+    {
+      "domain_id": "manufacturing",
+      "name": "Manufacturing",
+      "description": "製造業・生産管理・品質管理",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "manufacturing",
+      "is_active": true
+    },
+    {
+      "domain_id": "robotics",
+      "name": "Robotics",
+      "description": "ロボット工学・自動化",
+      "default_model_id": "deepseek-r1-32b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "robot",
+      "is_active": true
+    },
+    {
+      "domain_id": "cooking",
+      "name": "Cooking",
+      "description": "料理・レシピ・調理技術",
+      "default_model_id": "qwen2-7b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "cooking",
+      "is_active": true
+    },
+    {
+      "domain_id": "fitness",
+      "name": "Fitness",
+      "description": "フィットネス・運動・トレーニング",
+      "default_model_id": "qwen2-7b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "fitness",
+      "is_active": true
+    },
+    {
+      "domain_id": "travel",
+      "name": "Travel",
+      "description": "旅行・観光・地理",
+      "default_model_id": "qwen2-7b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "travel",
+      "is_active": true
+    },
+    {
+      "domain_id": "gardening",
+      "name": "Gardening",
+      "description": "園芸・ガーデニング・植物栽培",
+      "default_model_id": "qwen2-7b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "gardening",
+      "is_active": true
+    },
+    {
+      "domain_id": "diy",
+      "name": "DIY & Home Improvement",
+      "description": "DIY・日曜大工・住宅改修",
+      "default_model_id": "qwen2-7b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "diy",
+      "is_active": true
+    },
+    {
+      "domain_id": "music",
+      "name": "Music",
+      "description": "音楽理論・作曲・楽器演奏",
+      "default_model_id": "qwen2-7b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "music",
+      "is_active": true
+    },
+    {
+      "domain_id": "visual_arts",
+      "name": "Visual Arts",
+      "description": "美術・絵画・彫刻",
+      "default_model_id": "qwen2-7b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "art",
+      "is_active": true
+    },
+    {
+      "domain_id": "photography",
+      "name": "Photography",
+      "description": "写真撮影・画像編集",
+      "default_model_id": "qwen2-7b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "camera",
+      "is_active": true
+    },
+    {
+      "domain_id": "writing",
+      "name": "Writing",
+      "description": "文章作成・クリエイティブライティング",
+      "default_model_id": "qwen2-7b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "writing",
+      "is_active": true
+    },
+    {
+      "domain_id": "game_development",
+      "name": "Game Development",
+      "description": "ゲーム開発・ゲームデザイン",
+      "default_model_id": "llama3-8b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "game",
+      "is_active": true
+    },
+    {
+      "domain_id": "general",
+      "name": "General",
+      "description": "一般的な質問・雑学",
+      "default_model_id": "gemma2:12b",
+      "db_path": "",
+      "ontology_path": "",
+      "icon": "general",
+      "is_active": true
+    }
+  ]
+}

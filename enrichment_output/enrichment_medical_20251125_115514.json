@@ -1,0 +1,69 @@
+{
+  "domain_id": "medical",
+  "timestamp": "20251125_115514",
+  "total_questions": 10,
+  "success_count": 0,
+  "error_count": 10,
+  "results": [
+    {
+      "question": "心筋梗塞の主な症状は何ですか？",
+      "domain_id": "medical",
+      "error": "Model not found: ollama-llama3",
+      "status": "error"
+    },
+    {
+      "question": "脳卒中の主な症状は何ですか？",
+      "domain_id": "medical",
+      "error": "Model not found: ollama-llama3",
+      "status": "error"
+    },
+    {
+      "question": "糖尿病の主な症状は何ですか？",
+      "domain_id": "medical",
+      "error": "Model not found: ollama-llama3",
+      "status": "error"
+    },
+    {
+      "question": "高血圧の主な症状は何ですか？",
+      "domain_id": "medical",
+      "error": "Model not found: ollama-llama3",
+      "status": "error"
+    },
+    {
+      "question": "肺炎の主な症状は何ですか？",
+      "domain_id": "medical",
+      "error": "Model not found: ollama-llama3",
+      "status": "error"
+    },
+    {
+      "question": "COPDの主な症状は何ですか？",
+      "domain_id": "medical",
+      "error": "Model not found: ollama-llama3",
+      "status": "error"
+    },
+    {
+      "question": "心不全の主な症状は何ですか？",
+      "domain_id": "medical",
+      "error": "Model not found: ollama-llama3",
+      "status": "error"
+    },
+    {
+      "question": "不整脈の主な症状は何ですか？",
+      "domain_id": "medical",
+      "error": "Model not found: ollama-llama3",
+      "status": "error"
+    },
+    {
+      "question": "胃潰瘍の主な症状は何ですか？",
+      "domain_id": "medical",
+      "error": "Model not found: ollama-llama3",
+      "status": "error"
+    },
+    {
+      "question": "肝硬変の主な症状は何ですか？",
+      "domain_id": "medical",
+      "error": "Model not found: ollama-llama3",
+      "status": "error"
+    }
+  ]
+}
