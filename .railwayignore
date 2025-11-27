@@ -1,0 +1,51 @@
+# 推論エンジン関連（デモ版では不要）
+ilm_athens_engine/
+null_ai/
+
+# テスト・開発ファイル
+tests/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+
+# データベースファイル
+*.db
+*.iath
+sql_app.db
+ilm_athens_medical_db.iath
+
+# サンプルデータ
+finetune_data/
+enrichment_output/
+generated_tiles/
+inference_history/
+
+# ドキュメント（バックエンドでは不要）
+documentation/
+
+# 設定バックアップ
+config_backup/
+
+# デプロイメント設定
+deployment/
+
+# HuggingFaceモデルリポジトリ
+huggingface_model_repo/
+
+# フロントエンド（バックエンドデプロイでは不要）
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# その他の大きなファイル
+*.csv
+*.json.gz
+batch_create_tiles.py
+create_finetune_dataset.py
+create_sample_dataset.py
+e2e_pipeline_test.py
+final_integration_test.py
+test_*.py
