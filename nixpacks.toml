@@ -1,11 +1,11 @@
 [phases.setup]
-nixPkgs = ["python310", "nodejs-18_x"]
+nixPkgs = ["python310"]
 
 [phases.install]
-cmds = ["pip install -r requirements.production.txt", "cd frontend && npm ci"]
+cmds = ["pip install -r requirements.production.txt"]
 
 [phases.build]
-cmds = ["python init_db.py", "cd frontend && npm run build"]
+cmds = ["python init_db.py"]
 
 [start]
 cmd = "uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT"
