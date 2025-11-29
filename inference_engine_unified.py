@@ -142,7 +142,7 @@ async def main():
     # ご自身のLLM環境に合わせてURLとモデル名を修正してください
     config = DeepSeekConfig(
         api_url="http://localhost:11434",
-        model_name="gemma:2b",
+        model_name="phi4-finetuned:f16",
     )
     
     # 2. 推論エンジンを初期化

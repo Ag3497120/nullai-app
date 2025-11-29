@@ -5,7 +5,6 @@ Knowledge Base API
 from fastapi import APIRouter, Depends, HTTPException, Query
 from fastapi.responses import FileResponse, StreamingResponse
 from typing import List, Optional
-from pydantic import BaseModel
 from datetime import datetime
 import os
 import json
@@ -16,87 +15,9 @@ from backend.app.middleware.auth import get_current_user_optional, get_current_u
 from backend.app.config import settings
 from backend.app.database.session import get_db
 from backend.app.services.knowledge_service import KnowledgeService, get_knowledge_service
+from backend.app.schemas.knowledge import KnowledgeTile, KnowledgeListResponse, KnowledgeDetailResponse, EditRequest, VerificationMark
 
 router = APIRouter()
-
-
-# Pydanticモデルを更新
-class VerificationMark(BaseModel):
-    verification_type: str = "none"
-    is_expert_verified: bool
-    expert_orcid_id: Optional[str] = None
-    expert_name: Optional[str] = None
-    verification_date: Optional[datetime] = None
-    verification_count: int = 0
-    
-    class Config:
-        from_attributes = True
-
-class KnowledgeTile(BaseModel):
-    tile_id: str
-    domain_id: str
-    topic: str
-    content_preview: str
-    created_at: datetime
-    updated_at: datetime
-    verification_mark: VerificationMark
-    contributor_id: Optional[str] = None
-    confidence_score: float = 0.0
-    tags: List[str] = []
-
-    # ORMモデルからPydanticモデルへの変換を補助
-    @classmethod
-    def from_orm(cls, orm_obj):
-        content_preview = orm_obj.content[:200] + "..." if len(orm_obj.content) > 200 else orm_obj.content
-        
-        is_expert_verified = orm_obj.verification_type in ["expert", "multi_expert"]
-        expert_orcid = None
-        expert_name = None
-        if is_expert_verified and orm_obj.last_verified_by:
-            expert_orcid = orm_obj.last_verified_by.orcid_id
-            expert_name = orm_obj.last_verified_by.display_name
-
-        verification_mark = VerificationMark(
-            verification_type=orm_obj.verification_type,
-            is_expert_verified=is_expert_verified,
-            expert_orcid_id=expert_orcid,
-            expert_name=expert_name,
-            verification_date=orm_obj.last_verified_at,
-            verification_count=orm_obj.verification_count
-        )
-
-        return cls(
-            tile_id=orm_obj.id,
-            domain_id=orm_obj.domain_id,
-            topic=orm_obj.topic,
-            content_preview=content_preview,
-            created_at=orm_obj.created_at,
-            updated_at=orm_obj.updated_at,
-            verification_mark=verification_mark,
-            contributor_id=orm_obj.contributor_id,
-            confidence_score=orm_obj.confidence_score,
-            tags=orm_obj.tags or []
-        )
-
-class KnowledgeListResponse(BaseModel):
-    tiles: List[KnowledgeTile]
-    total_count: int
-    page: int
-    page_size: int
-    has_more: bool
-
-
-class KnowledgeDetailResponse(BaseModel):
-    tile: KnowledgeTile
-    full_content: str
-    sources: List[str] = []
-    related_tiles: List[str] = []
-    edit_history: List[dict] = []
-
-
-class EditRequest(BaseModel):
-    content: str
-    edit_reason: Optional[str] = None
 
 
 @router.get("/", response_model=KnowledgeListResponse)

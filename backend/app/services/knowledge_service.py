@@ -8,7 +8,7 @@ from uuid import uuid4
 from datetime import datetime
 
 from backend.app.database import models
-from backend.app.schemas import knowledge as schemas
+from backend.app import schemas
 
 class KnowledgeService:
     
