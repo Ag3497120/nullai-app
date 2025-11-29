@@ -51,7 +51,7 @@ class User(Base):
     workspace_members = relationship("WorkspaceMember", back_populates="user", cascade="all, delete-orphan")
     proposals = relationship("Proposal", back_populates="proposer", foreign_keys="[Proposal.proposer_id]")
     reviews = relationship("Proposal", back_populates="reviewer", foreign_keys="[Proposal.reviewer_id]")
-    contributions = relationship("KnowledgeTile", back_populates="contributor")
+    contributions = relationship("KnowledgeTile", back_populates="contributor", foreign_keys="[KnowledgeTile.contributor_id]")
 
 
 class KnowledgeTile(Base):
