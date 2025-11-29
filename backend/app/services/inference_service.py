@@ -14,22 +14,10 @@ import logging
 import threading
 from queue import Queue, Empty
 
+logger = logging.getLogger(__name__) # Moved to top
+
 # プロジェクトルートをsys.pathに追加
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
-
-from backend.app.config import settings
-from backend.app.services.cache_service import CacheService, get_cache_service
-
-# NurseLog System for model succession
-try:
-    from null_ai.nurse_log_system import InferenceHistory, ModelSuccessionManager, TrainingDataExporter
-    NURSELOG_AVAILABLE = True
-except ImportError:
-    NURSELOG_AVAILABLE = False
-    logger.warning("NurseLog System not available")
-
-import logging
-logger = logging.getLogger(__name__)
 
 # --- ストリーミング用のキュー管理 ---
 _streaming_queues: Dict[str, Queue] = {}
