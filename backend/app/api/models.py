@@ -15,7 +15,7 @@ import aiohttp
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
 
 from backend.app.middleware.auth import get_current_user, get_current_user_optional, require_role, User
-from null_ai.config import ConfigManager, ModelConfig, ModelProvider
+from backend.app.config import ConfigManager, ModelConfig, ModelProvider
 
 router = APIRouter()
 
