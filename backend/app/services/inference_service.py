@@ -28,6 +28,7 @@ except ImportError:
     NURSELOG_AVAILABLE = False
     logger.warning("NurseLog System not available")
 
+import logging
 logger = logging.getLogger(__name__)
 
 # --- ストリーミング用のキュー管理 ---
